@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: #D8F3DC;
+}
+
+nav{
+    background-color: #74C69D;
+    padding: 20px 30px;
+    display: flex;
+    gap: 30px;
+    border-radius: 0 0 10px 10px ;
+}
+
+nav .navLink{
+    color: #353535;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content .post{
+    transition: all 0.2s;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.content .post h1 span{
+    position: relative;
+    background-color: #081C15;
+    border-radius: 10px;
+    opacity: 0;
+    font-size: 20px;
+    z-index: 1;
+    color: #95D5B2;
+    padding: 10px;
+    transform: translateX(-100px);
+    transition: all 0.3s;
+}
+
+.content .post:hover{
+    transform: scale(1.01);
+    box-shadow: 10px 12px 30px rgba(0, 0, 0, 0.587);
+}
+
+.content .post:hover h1{
+    color: #74C69D;
+}
+
+.content .post:hover h1 span{
+    opacity: 1;
+    transform: translateX(40px);
+}
+
+.content .post h1{
+    background-color: 
+    #1B4332;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+    border-radius: 10px;
+    box-shadow: 10px 12px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #efefef;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.contentPost {
+    margin: 20px;
+}
+
+.contentPost .wrapContent{
+    background-color: #95D5B2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contentPost .wrapContent .header h1{
+    background-color: #95D5B2;
+    z-index: 2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+.contentPost .wrapContent .content span{
+    background-color: #95D5B2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.contentPost .wrapContent .footer{
+    background-color: #95D5B2;
+    padding: 20px;
+}
+
+.contentPost .wrapContent .footer span{
+    background-color: #081C15;
+    color: #efefef;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.wrapperProfile{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

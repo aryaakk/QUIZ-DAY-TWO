@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavBar from './component/NavBar';
+import PostPage from './pages/postPages';
+import ProfilPages from './pages/profilePages';
+import HomePage from './pages/homePage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path='/home' element={<HomePage/>}/>
+        <Route path='/profile' element={<ProfilPages/>}/>
+        <Route path='/post/:idPost' element={<PostPage/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
